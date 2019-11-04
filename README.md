@@ -41,3 +41,4 @@ spec:
 
 - https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/gpu-acceleration
 - https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/
+- https://techcommunity.microsoft.com/t5/Containers/Bringing-GPU-acceleration-to-Windows-containers/ba-p/393939
