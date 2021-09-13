@@ -3,8 +3,7 @@ module github.com/aarnaud/k8s-directx-device-plugin
 go 1.12
 
 require (
-	github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d
-	github.com/go-ole/go-ole v1.2.4 // indirect
+	github.com/StackExchange/wmi v1.2.1
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	k8s.io/kubelet v0.22.1
 	k8s.io/kubernetes v1.22.1
