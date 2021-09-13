@@ -9,7 +9,7 @@
 ## Build
 
 ```bash
-GOOS=windows GOARCH=amd64 go build -mod vendor -o k8s-directx-device-plugin.exe cmd/k8s-device-plugin/main.go
+GOOS=windows GOARCH=amd64 go build -o k8s-directx-device-plugin.exe cmd/k8s-device-plugin/main.go
 ```
 
 ## Run

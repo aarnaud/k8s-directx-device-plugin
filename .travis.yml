@@ -6,16 +6,19 @@ go:
 env:
   global:
     - GO111MODULE=on
+cache:
+  directories:
+    - $GOPATH/pkg/mod
 # Only clone the most recent commit.
 git:
   depth: 1
 
-# Skip the install step. Don't `go get` dependencies. Only build with the code
-# in vendor/
+# Skip the install step. Don't `go get` dependencies, Travis's implementation
+# does not honour the GOOS environment setting.
 install: true
 
 script:
-- "GOOS=windows GOARCH=amd64 go build -mod vendor -o k8s-directx-device-plugin.exe cmd/k8s-device-plugin/main.go"
+- "GOOS=windows GOARCH=amd64 go build -o k8s-directx-device-plugin.exe cmd/k8s-device-plugin/main.go"
 
 deploy:
   provider: releases
