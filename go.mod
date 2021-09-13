@@ -1,6 +1,6 @@
 module github.com/aarnaud/k8s-directx-device-plugin
 
-go 1.12
+go 1.16
 
 require (
 	github.com/StackExchange/wmi v1.2.1
